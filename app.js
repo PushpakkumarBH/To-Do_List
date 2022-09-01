@@ -25,7 +25,7 @@ const item3 = new Item({
 });
 // creating a default array to hold first three items in an array
 const defaultItems = [item1,item2,item3];
-app.listen(3000, function(req, res){
+app.listen(process.env.PORT | 3000, function(req, res){
     console.log("Server running on port 3000");
 });
 
