@@ -6,7 +6,7 @@ app.use(bodyparser.urlencoded({extended: true}));
 app.set('view engine','ejs');
 items=[];
 // adding mongoDB to To-Do list...
-mongoose.connect('mongodb+srv://admin-pushpak:Test123@cluster0.y6404gs.mongodb.net/todolistDB');
+mongoose.connect('mongodb+srv://USERNAME:PASSWORD@cluster0.y6404gs.mongodb.net/todolistDB');
 //schema for todo list
 const itemsSchema = new mongoose.Schema({
     name: String,
